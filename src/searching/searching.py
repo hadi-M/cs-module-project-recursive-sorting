@@ -1,6 +1,11 @@
 # TO-DO: Implement a recursive implementation of binary search
 def binary_search(arr, target, start, end):
     # Your code here
+    mid = (start + end) // 2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] < target:
+        binary_search()
 
 
 # STRETCH: implement an order-agnostic binary search
